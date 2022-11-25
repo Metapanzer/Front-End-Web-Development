@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Head menyimpan informasi tambahan mengenai website-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to Front End</title>
+
+    <!-- Internal css styling -->
+    <style>
+      table,
+      td {
+        border: 2px solid black;
+      }
+      th {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+
+  <!--Body menyimpan konten dari website-->
+  <body>
+    <!--absolute link. atribute target="_blank" membuka link pada tab baru-->
+    <a href="google.com" target="_blank"><p>Buat paragraf disini</p></a>
+
+    <!-- relative link -->
+    <a href="./day1.html"><h1>Heading 1</h1></a>
+
+    <!-- tag input gambar -->
+    <img
+      src="https://narmadi.com/id/wp-content/uploads/2020/06/gambar-mewarnai-pemandangan.webp"
+      alt="gambar"
+    />
+
+    <!-- Jenis heading -->
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- Horizontal line -->
+    <hr />
+
+    <!-- Break / new line -->
+    ini baris 1<br />
+    ini baris 2
+
+    <!-- Text Formating -->
+    <b>ini Bold</b>
+    <strong>ini strong</strong>
+    <i>ini italic</i>
+    <em>ini emphasized</em>
+    <mark>ini marked</mark>
+    <small>ini small</small>
+    <del>ini deleted</del>
+    <u>ini underline</u>
+    <ins>ini insert</ins>
+    <sub>ini subscript</sub>
+    <sup>ini superscript</sup>
+    <hr />
+
+    <!-- Unordered List -->
+    <h1>Daftar Belanja</h1>
+    <ul>
+      <li>Kecap</li>
+      <li>Gula</li>
+      <li>Kopi</li>
+      <li>Minyak</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <h1>Daftar Belanja Ordered</h1>
+    <!--start="" Mulai dr urutan ke brp-->
+    <!--type="" Tipe urutannya-->
+    <ol start="" type="">
+      <li>Kecap</li>
+      <li>Gula</li>
+      <li>Kopi</li>
+      <li>Minyak</li>
+    </ol>
+
+    <!--Form tag-->
+    <form action="" method="post">
+      <!--text box. atribute type="" untuk mementukan jenis input, required untuk set rules form tidak boleh kosong-->
+      <p>
+        <label for="Password">Password: </label
+        ><input type="password" id="Password" />
+      </p>
+      <p>
+        <label for="Name">Name: </label
+        ><input type="text" placeholder="Name" id="Name" required />
+      </p>
+      <p><label for="Email">Email: </label><input type="email" id="Email" /></p>
+      <p>
+        <label for="Number">Number: </label
+        ><input type="number" min="1" max="10" id="Email" />
+      </p>
+
+      <!-- textarea -->
+      <p><textarea name="textarea" id="" cols="30" rows="10">a</textarea></p>
+
+      <!--radio button-->
+      <input type="radio" name="Status" id="Married" />
+      <label for="Married">Married</label>
+      <input type="radio" name="Status" id="Single" />
+      <label for="Single">Single</label>
+
+      <!--Checkbox-->
+      <p>
+        <input type="Checkbox" name="Peliharaan" id="Anjing" />
+        <label for="Anjing"> Anjing </label>
+        <input type="Checkbox" name="Peliharaan" id="Kucing" />
+        <label for="Kucing"> Kucing </label>
+      </p>
+
+      <!--Select dropdown-->
+      <select name="" id="">
+        <optgroup label="AB">
+          <option value="A">A</option>
+          <option value="B">B</option>
+        </optgroup>
+        <optgroup label="CD">
+          <option selected value="C">C</option>
+          <option value="D">D</option>
+        </optgroup>
+        <optgroup label="EF">
+          <option value="E">E</option>
+          <option value="F">F</option>
+        </optgroup>
+      </select>
+
+      <!--click input button-->
+      <!-- submit akan mentrigger action form -->
+      <!-- reset akan mereset semua isian form -->
+      <p><input type="submit" value="Click Submit" /></p>
+      <p><input type="reset" value="Click Reset" /></p>
+    </form>
+
+    <!-- fieldset memberikan kotak mengelilingi konten, legend memberi nama pada fieldset -->
+    <fieldset>
+      <legend>Legend Fieldset</legend>
+      Konten Fieldset
+    </fieldset>
+
+    <!--button untuk melakukan function javascript jika disambungkan-->
+    <button type="button" onclick="doFunction();">Function Click</button>
+
+    <!-- Table -->
+    <table>
+      <!--tr adalah table row, untuk membuat baris-->
+      <tr>
+        <!--th adalah table head, untuk membuat baris pertama pada kolom cetak tebal-->
+        <th>No.</th>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Food</th>
+        <th>Group</th>
+      </tr>
+      <tr>
+        <!--td adalah table data, untuk menginput data dalam 1 baris-->
+        <td>1</td>
+        <td><img src="./assets/kucing.jpg" alt="kucing" /></td>
+        <td>Smiling<sup>Cat</sup></td>
+        <td>Happy<sub>Fish</sub></td>
+        <td>
+          <input type="radio" name="kucing" id="vertebrate" />
+          <b>Vertebrate</b>
+          <input type="radio" name="kucing" id="invertebrate" />
+          <b>Invertebrate</b>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><img src="./assets/anjing.jpg" alt="anjing" /></td>
+        <td>Happy<sup>Dog</sup></td>
+        <td>Fresh<sub>Meat</sub></td>
+        <td>
+          <input type="radio" name="anjing" id="Vertebrate" />
+          <b>Vertebrate</b>
+          <input type="radio" name="anjing" id="Invertebrate" />
+          <b>Inertebrate</b>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><img src="./assets/simpanse.jpg" alt="simpanse" /></td>
+        <td>Confuse<sup>Simpanse</sup></td>
+        <td>Sweet<sub>Banana</sub></td>
+        <td>
+          <input type="radio" name="simpanse" id="Vertebrate" />
+          <b>Vertebrate</b>
+          <input type="radio" name="simpanse" id="Invertebrate" />
+          <b>Inertebrate</b>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td><img src="./assets/uburubur.jpg" alt="uburubur" /></td>
+        <td>Frisky<sup>Jellyfish</sup></td>
+        <td>Saltwater<sub>Plankton</sub></td>
+        <td>
+          <input type="radio" name="uburubur" id="Vertebrate" />
+          <b>Vertebrate</b>
+          <input type="radio" name="uburubur" id="Invertebrate" />
+          <b>Inertebrate</b>
+        </td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><img src="./assets/cumi.jpg" alt="cumi" /></td>
+        <td>Swiming<sup>Squid</sup></td>
+        <td>Small<sub>Fish</sub></td>
+        <td>
+          <input type="radio" name="cummi" id="Vertebrate" />
+          <b>Vertebrate</b>
+          <input type="radio" name="cummi" id="Invertebrate" />
+          <b>Inertebrate</b>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
