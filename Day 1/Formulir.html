@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge</title>
+    <style>
+      div {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend><h1>FORMULIR PENDAFTARAN</h1></legend>
+
+      <center>
+        <!--ditambahin table biar rapih-->
+        <form action="">
+          <table>
+            <tr>
+              <td><label for="firstname">Firstname: </label></td>
+              <td>
+                <input
+                  type="name"
+                  id="firstname"
+                  placeholder="Nama Depan"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="lastname">Lastname: </label></td>
+              <td>
+                <input
+                  type="name"
+                  id="lastname"
+                  placeholder="Nama Belakang"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="phonenumber">Phone Number: </label></td>
+              <td>
+                <input
+                  type="number"
+                  id="phonenumber"
+                  placeholder="Nomor Telepon"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="age">Age: </label></td>
+              <td>
+                <input type="number" id="age" placeholder="Age" required />
+              </td>
+            </tr>
+          </table>
+          <div>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </div>
+        </form>
+      </center>
+    </fieldset>
+  </body>
+</html>
